@@ -51,7 +51,7 @@ export const api = {
   async createEvent(eventData: EventData): Promise<void> {
     // Simulasi API call dengan delay
     await new Promise(resolve => setTimeout(resolve, 1000));
-    
+    //test
     // Simpan ke localStorage untuk simulasi
     const existingEvents = JSON.parse(localStorage.getItem('events') || '[]');
     existingEvents.push(eventData);
