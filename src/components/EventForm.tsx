@@ -41,7 +41,6 @@ export const EventForm = ({ onSuccess }: { onSuccess?: () => void }) => {
 
     try {
       await api.createEvent(newEvent);
-      storage.invalidateSync();
       toast.success('Acara berhasil dibuat!');
       setFormData({
         namaAcara: '',
